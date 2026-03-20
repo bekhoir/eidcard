@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>بطاقة تهنئة رمضان ١٤٤٧ هـ | BKHR Generation</title>
+  <title>بطاقة تهنئة عيد الفطر ١٤٤٧ هـ | BKHR Generation</title>
 
   <!-- Arabic Sans Serif Font -->
   <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
@@ -108,7 +108,7 @@
   </div>
 
   <div class="container">
-    <div class="title">بطاقة تهنئة رمضان ١٤٤٧ هـ</div>
+    <div class="title">بطاقة تهنئة عيد الفطر ١٤٤٧ هـ</div>
 
     <input
       type="text"
@@ -134,7 +134,7 @@
     canvas.height = 1280;
 
     const img = new Image();
-    img.src = "2.png"; // صورة الخلفية
+    img.src = "eidcard.png"; // صورة الخلفية
 
     img.onload = function () {
       drawBase();
@@ -153,7 +153,7 @@
 
       ctx.textAlign = "center";
       ctx.direction = "rtl";
-      ctx.fillStyle = "#000000";
+      ctx.fillStyle = "#FFFFFF";
       ctx.font = "700 33px Cairo";
 
       // موقع الاسم (يمكن تعديله)
@@ -162,7 +162,7 @@
 
     function downloadImage() {
       const link = document.createElement("a");
-      link.download = "بطاقة-رمضان.png";
+      link.download = "eid1447.png";
       link.href = canvas.toDataURL("image/png");
       link.click();
     }
